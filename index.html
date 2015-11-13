@@ -5,15 +5,13 @@
     <title> Ein Titel</title>
   </head>
   <body>
-    <h1>Willkomen</h1>
-    <p>Dies ist meine erste "Hallo World" -App.</p>
-    <h2>Glücklicher Schüler</h2>
-    <button onclick="zeige Schüler()">Bestimme glücklichen Schüler</button>
+    <h1>Glücklicher Schüler</h1>
+    <button onclick="zeigeSchüler();">Bestimme einen glücklichen Schüler</button>
     <div id="ausgabe"></div>
     <script>
-      function zeige Schüler() {
-        var Schülerliste = ["Hugo", "Irene", "Agape", "Wallarich"];
-        var Zufall = Math.floor(Math.random()*schülerliste.length);
+      function zeigeSchüler() {
+        var schülerliste = ["Hugo", "Irene", "Agape", "Wallarich"];
+        var zufall = Math.floor(Math.random()*schülerliste.length);
         document.getElementById("ausgabe").innerHTML=schülerliste[zufall];
       }
     </script>
